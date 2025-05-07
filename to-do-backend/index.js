@@ -4,7 +4,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-
+const port = process.env.PORT || 5000;
 // Initialize express app
 const app = express();
 
@@ -26,7 +26,7 @@ const Todo = mongoose.model('Todo', new mongoose.Schema({
 // Routes
 
 // Get all todos
-app.get('/', async (req, res) => {
+app.get('/todos', async (req, res) => {
   try {
     const todos = await Todo.find();
     res.json(todos);
@@ -76,8 +76,13 @@ app.delete('/todos/:id', async (req, res) => {
   }
 });
 
+
 // Start the server
-const port = process.env.PORT || 5000;
+app.get('/', (req, res) => {
+  res.send('The React TO_DO Server is running!')
+})
+
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
+
