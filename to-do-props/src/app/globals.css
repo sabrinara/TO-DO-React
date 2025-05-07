@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+body {
+  color: black;
+  margin: auto;
+  font-family: sans-serif;
+  background: linear-gradient(115deg, #ffffff 28%, #87bcee 70%, #b060ff);
+  height: 100vh;
+  overflow: hidden;
+}
+h2{
+  font-size: 48px;
+  font-weight: 500;
+  color: #79086f;
+}
+
+.LabelTitle{
+  font-size: 22px;
+  font-weight: 500;
+  color: #79086f;
+  margin-bottom: 4px;
+}
+
+.BTN{
+   background-color: #79086f;
+   padding: 8px 8px;
+   color: white;
+   border: 1px solid rgb(3, 3, 37);
+   border-radius: 4px;
+   font-weight: 500;
+}
+.BTN:hover{
+  background-color: rgb(5, 49, 70);
+  
+}
