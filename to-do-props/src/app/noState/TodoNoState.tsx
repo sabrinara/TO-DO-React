@@ -97,7 +97,7 @@ export const TodoNoState = () => {
   return (
     <div>
       <div className='flex justify-between items-center gap-10'>
-        <h2 className='text-2xl'>Todo List Without useState (DOM)</h2>
+        <h2 className='text-2xl'>Todo List Without useState <br /> (DOM)</h2>
         <button className="BTN">
           <a href="/">Back to with Props</a>
         </button>
